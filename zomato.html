@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+  <link rel="icon" href="https://play-lh.googleusercontent.com/Zqv3j3gWCWrxuHW1VkRKNWso3beRsrwPCj58kG_Ile6iGGSf1YfkPYhKExXKY7_L0lU">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+      html, body{
+         width: 100;
+         height: 100;
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+      
+      .frontpage h1{
+         margin: 0;
+         padding: 0;
+         color: white;
+         font-family:sans-serif;
+      }
+      .frontpage{
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+         width: 100vw;
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: center;
+         background-image: url(https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png)
+      }
+      .frontpage h2{
+         margin: 0;
+         padding: 0;
+         color: white;
+         font-family: sans-serif;
+      }
+      .images{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 50px;
+      }
+      .images img{
+         height: auto;
+         width: 200px;
+      }
+      .newpage{
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         background-color: rgb(251, 249, 242);
+         height: 950px;
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+      }
+      .newpage h1{
+         margin: 0;
+         padding: 0;
+         color: red;
+         font-family:Arial, sans-serif;
+         font-size: 45px;
+      }
+      .newpage p{
+         font-family: sans-serif;
+         font-size: 20px;
+      }
+      .images2 img{
+         position:absolute;
+         left: 15%;
+         top: 135%;
+         width: 250px;
+         
+
+      }
+      .image3 img{
+         position: absolute;
+         right: 15%;
+         top: 160%;
+         width: 250px;
+         rotate: +5deg;
+      }
+      .image4 img{
+          position: absolute;
+         right: 15%;
+         top: 110%;
+         width: 250px;
+         rotate: +5deg;
+      }
+      .tomato img{
+         position: absolute;
+         left: 5%;
+         top: 175%;
+         width: 50px;
+         rotate: -15deg;
+      }
+      .leaf img{
+          position: absolute;
+         left: 35%;
+         top: 105%;
+         width: 50px;
+      }
+      .tomato2 img{
+         position: absolute;
+         right: 5%;
+         top: 145%;
+         width: 50px;
+      }
+      .marketing{
+         margin: 0;padding: 0;
+         box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+         background-color: rgb(251, 249, 242);
+         height: 180px;
+         width: 1000px;
+         border-radius: 15px;
+         position: absolute;
+         top: 200%;
+      }
+      .marketing h1{
+         color: rgb(109, 106, 106);
+         position: absolute;
+         left: 5%; 
+            
+      }
+      .marketing h2{
+         font-family: sans-serif;
+         color: rgb(150, 149, 149);
+         position: absolute;
+         left: 5%;
+         
+      }
+      .marketing img{
+         position: absolute;
+         left: 27%;
+         height: 70px;
+         width: auto;
+         top: 25%;
+      }
+      .cities h1{
+          color: rgb(109, 106, 106);
+         position:absolute;
+         left: 43%;
+         top: 205.5%;
+      }
+      .cities h2{
+         color: rgb(150, 149, 149);
+         position:absolute;
+         left: 43%;
+         top: 210%;
+         font-family:sans-serif;
+      }
+      .location img{
+         position: absolute;
+         height: 70px;
+         width: auto;
+         top: 205%;
+         left: 51.5%;
+      }
+      .orders h1{
+         color: rgb(109, 106, 106);
+         position:absolute;
+         left: 57%;
+         top: 205.5%;
+      }
+      .orders h2{
+         color: rgb(150, 149, 149);
+         position:absolute;
+         left: 57%;
+         top: 210%;
+         font-family: sans-serif;
+      }
+      .orders img{
+         position: absolute;
+         height: 70px;
+         width: auto;
+         top: 206%;
+         left: 72%;
+      }
+      .appdetails{
+        position : absolute;
+         top: 234%;
+         margin: 0;
+         padding: 0;
+         background-color: rgba(244, 218, 250, 0.586);
+         height: 100%;
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+      }
+      .appdetails h1{
+         margin: 0;
+         padding: 0;
+        position: absolute;
+        top: 30%;
+        font-size: 60px;
+      }
+      .appdetails h2{
+         margin: 0;
+         padding: 0;
+        position: absolute;
+        top: 55%;
+        color: rgb(68, 68, 68);
+        font-family: sans-serif;
+      }
+      .service1 img{
+         position: absolute;
+         left: 15%;
+         top:305% ;
+         height: 170px;
+         width: auto;
+      }
+      .service2 img{
+         position: absolute;
+         left: 29%;
+         top:303% ;
+         height: 140px;
+         width: auto;
+      }
+      .service3 img{
+         position: absolute;
+         left: 39%;
+         top:305% ;
+         height: 170px;
+         width: auto;
+      }
+      .service4 img{
+         position: absolute;
+         left: 52%;
+         top:303% ;
+         height: 140px;
+         width: auto;
+      }
+      .service5 img{
+         position: absolute;
+         left: 60%;
+         top: 305% ;
+         height: 170px;
+         width: auto;
+      }
+      .service6 img{
+         position: absolute;
+         left: 72%;
+         top: 303% ;
+         height: 140px;
+         width: auto;
+      }
+
+
+   </style>
+  <title>Zomato </title>
+</head>
+<body>
+   <div class="frontpage">
+    <img src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png">
+    <br>
+    <br>
+    <h1>India's 1st</h1>
+    <h1>food delivery app</h1>
+    <br>
+    <br>
+    <h2>Experience fast & easy online ordering<h2>
+      <h2>on the zomato app</h2>
+      <br>
+      <br>
+   <div class="images">
+      <img src="https://b.zmtcdn.com/data/o2_assets/aad864bd17860b27634fe621001c32db1739350431.png" alt="">
+      <img src="https://b.zmtcdn.com/data/o2_assets/df6464de32f4a09262cee301f65aaa661739351256.png" alt="">
+   </div>
+   </div>
+   <div class="newpage">
+      <h1>Better food for</h1>
+      <h1>more people</h1>
+      <br>
+      <br>
+      <p>For over a decade, we’ve enabled our <br> customers to discover new tastes, <br> delivered right to their doorstep</p>
+      <div class="images2">
+         <img src="https://b.zmtcdn.com/data/o2_assets/110a09a9d81f0e5305041c1b507d0f391743058910.png" alt="">
+      </div>
+      <div class="image3">
+         <img src="https://b.zmtcdn.com/data/o2_assets/316495f4ba2a9c9d9aa97fed9fe61cf71743059024.png" alt="">
+         
+      <div class="image4">
+         <img src="https://b.zmtcdn.com/data/o2_assets/b4f62434088b0ddfa9b370991f58ca601743060218.png" alt="">
+      </div>
+      <div class="tomato">
+         <img src="https://b.zmtcdn.com/data/o2_assets/9ef1cc6ecf1d92798507ffad71e9492d1742892584.png" alt="">
+      </div>
+      <div class="leaf">
+         <img src="https://b.zmtcdn.com/data/o2_assets/70b50e1a48a82437bfa2bed925b862701742892555.png" alt="">
+      </div>
+      <div class="tomato2">
+         <img src="https://b.zmtcdn.com/data/o2_assets/9ef1cc6ecf1d92798507ffad71e9492d1742892584.png" alt="">
+      </div>
+   </div>
+   <div class="marketing">
+      <br>
+      <br>
+      <h1>3,00,000+</h1>
+      <br>
+      <br>
+      <h2>resturants</h2>
+      <div class="resturant">
+         <img src="https://b.zmtcdn.com/data/o2_assets/d19ec60986487a77bcb026e5efc3325f1742908200.png" alt="">
+      </div>
+   </div>
+   <div class="cities">
+      <br>
+      <br>
+      <h1>800+</h1>
+      <br>
+      <br>
+      <h2>cities</h2>
+   </div>
+   <div class="location">
+      <img src="https://b.zmtcdn.com/data/o2_assets/e7533c4081d6140da37b9f430cb7b8051743006192.png" alt="">
+   </div>
+   <div class="orders">
+     <br>
+      <br>
+      <h1>3 billion+</h1>
+      <br>
+      <br>
+      <h2>orders delivered</h2>
+      <img src="https://b.zmtcdn.com/data/o2_assets/713443cc5944ce4284d7e49e75e2aacf1742466222.png" alt=""> 
+   </div>
+<div class="appdetails">
+   <h1>What’s waiting for you <br>on the app?</h1>
+   <br>
+   <h2>Our app is packed with features that <br> enable you to experience food <br> delivery like never before</h2>
+</div>
+<div class="service1">
+   <figure><img src="https://b.zmtcdn.com/data/o2_assets/d0f1639403f80f8f2c19e0d538222e661742455804.png" alt="">
+   </figure>
+<div class="service2">
+   <img src="https://b.zmtcdn.com/data/o2_assets/82f145180cd6f920a8a8617dda366a0a1742455963.png" alt="">
+   <div class="service3">
+      <img src="https://b.zmtcdn.com/data/o2_assets/5e7aab0f183b36fc12c29279f0cb55181742462245.png" alt="">
+   </div>
+   <div class="service4">
+      <img src="https://b.zmtcdn.com/data/o2_assets/867f86a10503998e437963bb37c451591742455764.png" alt="">
+   </div>
+   <div class="service5">
+      <img src="https://b.zmtcdn.com/data/o2_assets/813952c961fd13588cb71867d84ea7dc1742455815.png" alt="">
+   </div>
+</div>
+<div class="service6">
+   <img src="https://b.zmtcdn.com/data/o2_assets/6e27c9acde6045c272a28e6eb275727e1742455789.png" alt="">
+</div>
+</body>
+</html>
